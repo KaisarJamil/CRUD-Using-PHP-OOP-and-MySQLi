@@ -5,7 +5,7 @@
 <?php 
 	
 	$id = $_GET['id'];
-	$db = new Database(); //object of database
+	$db = new Database(); 
 	$selectData = "select * from tbl_userinfo where id=$id"; //select all data from table
 	$getData = $db->select($selectData)->fetch_assoc();
 
